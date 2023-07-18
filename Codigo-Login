@@ -1,1 +1,39 @@
+package Login;
 
+import java.util.Scanner;
+/**
+ *
+ * @author Angel Geovanni Marcial Morales
+ */
+//generar un login con nombre de usuario y contraseña estatico 
+public class Login 
+{
+    public static final String NOMBRE = "angel";
+    public static final String CONTRASENIA = "1234";
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)             
+    {
+        try (Scanner leer = new Scanner(System.in)) 
+        {
+            System.out.print("Nombre de usuario: ");
+            String nombre = leer.nextLine();
+            System.out.print("Contrasenia: ");
+            String credencial = leer.nextLine();
+            
+            if (datos(nombre,credencial))
+            {
+                System.out.println("Usuario aceptado");
+            }
+            else
+            {
+                System.out.println("Usuario rechazado");
+            }
+        }              
+    }   
+    public static boolean datos(String nombre,String credencial)
+    {
+        return nombre.equals(NOMBRE) && credencial.equals(CONTRASENIA);
+    }
+}
