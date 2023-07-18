@@ -1,2 +1,4 @@
-# Sistema-de-Login-con-Reconocimiento-Facial
-Hola chicos, en este repositorio encontraran un sistema que logre desarrollar en Python donde realizamos un proceso de registro y login con deteccion y reconocimiento facial.
+# Sistema-de-Login
+
+este codigo te permitira verificar si un usuario esta registrado en el sistema.
+se valida contraseña y nombre de manera estatica.
